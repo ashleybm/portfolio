@@ -1,0 +1,35 @@
+/* App.css */
+.App {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Light mode (default) - changed to specific soft gray #b1b7c1 */
+.light-mode {
+  background-color: #b1b7c1;
+  color: #222222;
+}
+
+/* Dark mode - updated to #6c767e */
+.dark-mode {
+  background-color: #6c767e;
+  color: #f0f0f0;
+}
+
+.dark-mode a {
+  color: #80b3ff;
+}
+
+.dark-mode button {
+  background-color: #444444;
+  color: #f0f0f0;
+  border-color: #666666;
+}
+
+.dark-mode button:hover {
+  background-color: #555555;
+}

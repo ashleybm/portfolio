@@ -1,13 +1,145 @@
-.Nav {
-    text-align: left;
+/* Nav.css */
+.navbar {
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
 }
 
-img {
-    width: 10em;
-    height: 10em;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-a {
-    margin: 2em;
-    vertical-align: middle;
+.nav-logo {
+  flex: 0 0 auto;
+  margin-right: 3rem; /* Added more space to the right of the logo */
+}
+
+.nav-logo-img {
+  width: auto;
+  height: 4em; /* 4x the size of text */
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 2rem; /* Added more space to the left of the links */
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 2px solid #222222;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Raleway', sans-serif;
+  color: #222222;
+}
+
+.nav-button:hover {
+  background-color: #222222;
+  color: white;
+}
+
+.dark-mode-toggle {
+  margin-left: auto;
+}
+
+.dark-mode-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.dark-mode-button:hover {
+  transform: scale(1.1);
+}
+
+/* Lightbulb styling */
+.lightbulb-icon {
+  font-size: 1.8rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Bulb on state - bright and flashing */
+.bulb-on .lightbulb-icon {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 0, 0.7));
+  animation: bulb-flash 2s infinite alternate;
+}
+
+/* Bulb off state - dimmed */
+.bulb-off .lightbulb-icon {
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+/* Flashing animation for the lightbulb */
+@keyframes bulb-flash {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 0, 0.7));
+    opacity: 0.9;
+  }
+  100% {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 0, 1));
+    opacity: 1;
+  }
+}
+
+/* Dark mode styles */
+.navbar.dark-mode {
+  background-color: #6c767e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.dark-mode .nav-button {
+  border-color: #cfd6dc;
+  color: #cfd6dc;
+}
+
+.navbar.dark-mode .nav-button:hover {
+  background-color: #86949f;
+  color: #ffffff;
+  border-color: #86949f;
+}
+
+/* Light mode styles */
+.navbar.light-mode {
+  background-color: #b1b7c1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .dark-mode-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
 }
