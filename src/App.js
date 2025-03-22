@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import Resume from './components/Resume';
-import './App.css';
+import Talks from './components/Talks';
+import Article from './components/Article';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -39,6 +41,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home darkMode={darkMode} />} />
             <Route path="/resume" element={<Resume darkMode={darkMode} />} />
+            <Route path="/talks" element={<Talks darkMode={darkMode} />} />
+            <Route path="article/:slug" element={<Article darkMode={darkMode} />} />
           </Routes>
         </div>
       </div>

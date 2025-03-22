@@ -1,17 +1,23 @@
 import React from 'react';
 import './Home.css';
+import ArticlePreview from './ArticlePreview';
+import articles from '../data/articles';
 
-function Home() {
+function Home({ darkMode }) {
   return (
-    <div className="home-container">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm Ashley Copeland, a Software Engineer.</p>
-      <div className="content-section">
-        <h2>About Me</h2>
-        <p>
-          This is a placeholder for your home page content. You can add information about yourself,
-          your skills, projects, and anything else you'd like to showcase.
-        </p>
+    <div className={`home-container ${darkMode ? 'dark-mode' : 'light-mode'}`}>
+      <div className="home-header">
+        <h1>Welcome to My Portfolio</h1>
+        <p className="intro-text">I'm Ashley Copeland, a Software Engineer sharing my thoughts and experiences through articles.</p>
+      </div>
+      
+      <div className="articles-section">
+        <h2 className="section-title">Latest Articles</h2>
+        <div className="articles-container">
+          {articles.map(article => (
+            <ArticlePreview key={article.id} article={article} />
+          ))}
+        </div>
       </div>
     </div>
   );

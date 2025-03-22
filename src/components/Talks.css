@@ -1,0 +1,76 @@
+/* Talks.css */
+.talks-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.talks-section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #cfd6dc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark-mode .talks-section {
+  background-color: #86949f;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.talks-section h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.slides-container {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.google-slides {
+  display: block;
+  border: none;
+}
+
+.talk-description {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .talk-description {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.talk-description h2 {
+  margin-bottom: 0.5rem;
+}
+
+.talk-description a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dark-mode .talk-description a {
+  color: #b8d0ff;
+}
+
+.talk-description a:hover {
+  text-decoration: underline;
+}
+
+/* For smaller screens, adjust the iframe height */
+@media (max-width: 768px) {
+  .google-slides {
+    height: 400px;
+  }
+}
