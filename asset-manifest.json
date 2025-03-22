@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ccfbd165.css",
-    "main.js": "/portfolio/static/js/main.d7d1bbc6.js",
+    "main.css": "/portfolio/static/css/main.d0b6485e.css",
+    "main.js": "/portfolio/static/js/main.ebf6310e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/AshleyMCopeland_Resume.pdf": "/portfolio/static/media/AshleyMCopeland_Resume.9bae45dd87bbd6c9082c.pdf",
     "static/media/ac_logo_dark.svg": "/portfolio/static/media/ac_logo_dark.25b20beb37a5fd1a11a559bcb511169c.svg",
     "static/media/ac_logo_white.svg": "/portfolio/static/media/ac_logo_white.8d0ff60354707f444165ae62b085e6c4.svg",
+    "static/media/grizzhackslogo.svg": "/portfolio/static/media/grizzhackslogo.d720241eed0b1b457d8fe6686960906e.svg",
     "index.html": "/portfolio/index.html",
-    "main.ccfbd165.css.map": "/portfolio/static/css/main.ccfbd165.css.map",
-    "main.d7d1bbc6.js.map": "/portfolio/static/js/main.d7d1bbc6.js.map",
+    "main.d0b6485e.css.map": "/portfolio/static/css/main.d0b6485e.css.map",
+    "main.ebf6310e.js.map": "/portfolio/static/js/main.ebf6310e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccfbd165.css",
-    "static/js/main.d7d1bbc6.js"
+    "static/css/main.d0b6485e.css",
+    "static/js/main.ebf6310e.js"
   ]
 }
